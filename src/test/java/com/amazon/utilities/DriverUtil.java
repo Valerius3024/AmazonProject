@@ -1,4 +1,5 @@
 package com.amazon.utilities;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.edge.*;
@@ -9,6 +10,7 @@ import java.net.*;
 import java.util.*;
 import java.util.concurrent.*;
 
+@Slf4j
 public class DriverUtil {
 
     /*
