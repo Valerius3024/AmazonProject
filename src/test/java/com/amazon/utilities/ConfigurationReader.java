@@ -4,11 +4,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class ConfigurationReader {
 
     private static Properties properties = new Properties();
 
-    static{
+    static {
 
         try {
 
@@ -23,13 +26,14 @@ public class ConfigurationReader {
 
 
         } catch (IOException e) {
-            System.out.println("File not found in the ConfigurationReader class.");
+            log.info("File not found in the ConfigurationReader class.");
+            //System.out.println("File not found in the ConfigurationReader class.");
             e.printStackTrace();
         }
 
     }
 
-    public static String getProperty(String keyword){
+    public static String getProperty(String keyword) {
         return properties.getProperty(keyword);
     }
 
