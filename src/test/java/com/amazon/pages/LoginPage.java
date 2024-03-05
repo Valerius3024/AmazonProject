@@ -29,6 +29,9 @@ public class LoginPage {
     @FindBy(id = "nav-link-accountList-nav-line-1")
     public WebElement cydeoTitle;
 
+    @FindBy(xpath = "//h4[.='Bir sorun oluştu']")
+    public WebElement errorMessage;
+
 
 
 
