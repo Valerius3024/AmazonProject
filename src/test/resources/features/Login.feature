@@ -16,4 +16,3 @@ Feature: Login Function
     Examples:
       | email         | password   |
       | abc@gmail.com | 12345689ab |
-
