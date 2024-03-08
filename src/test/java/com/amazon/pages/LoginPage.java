@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
 public class LoginPage {
 
     public LoginPage() {
@@ -31,12 +30,5 @@ public class LoginPage {
 
     @FindBy(xpath = "//h4[.='Bir sorun oluştu']")
     public WebElement errorMessage;
-
-
-
-
-
-
-
 
 }
